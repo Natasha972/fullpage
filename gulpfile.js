@@ -57,9 +57,6 @@ function styles()
 function images()
 {
   return src('src/images/**/*.{jpg, svg, png, gif, webp}')
-  .pipe(newer('dist/images/'))
-  .pipe(src('src/images/**/*.{jpg, svg, png, gif, webp}'))
-  .pipe(newer('dist/images/'))
   .pipe(imagemin())
   .pipe(dest('dist/images/'))
 }
@@ -75,7 +72,7 @@ function startwatch()
 {
   watch('src/js/**/*.js', scripts)
   watch('src/*.html', html)
-  watch('src/css/*.scss', styles)
+  watch('src/styles/*.scss', styles)
   watch('src/images/*', images)
   watch('src/fonts/*', fonts)
 }
