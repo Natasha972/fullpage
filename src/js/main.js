@@ -7,6 +7,8 @@ $(document).ready(function() {
     menu: '#myMenu',
     css3: true,
     slidesNavigation: true,
+    dragAndMove: true,
+    loopBottom: true,
 
   });
 

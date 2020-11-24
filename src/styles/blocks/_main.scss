@@ -1,0 +1,17 @@
+.main {
+  margin: 0 auto;
+  display: flex;
+  width: 60%;
+
+  &__title {
+    width: 40%;
+    font-size: 44px;
+    text-align: left;
+  }
+
+  &__image {
+    position: relative;
+    width: 60%;
+    height: 70vh;
+  }
+}
